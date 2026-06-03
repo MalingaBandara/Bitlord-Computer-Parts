@@ -13,6 +13,27 @@ The system is built on an **Event-Driven Microservices Architecture** using **Ja
 - **Observability**: Prometheus, Grafana, Micrometer, and Zipkin (Distributed Tracing)
 - **Database**: MySQL with Spring Data JPA/Hibernate
 
+---
+
+## 🧠 System Diagrams
+
+### 🔷 High-Level Architecture
+![High Level Architecture](./Diagrams/High_Level_Architecture.png)
+
+---
+
+### 🔷 Use Case Diagram
+![Use Case Diagram](./Diagrams/Use_Case_Diagram.png)
+
+---
+
+### 🔷 Kafka Listener Architecture
+![Kafka Listener Architecture](./Diagrams/kafka_listener_architecture.svg)
+
+---
+
+
+
 ## Repositories (Services)
 This project is broken down into modular repositories (services). Click on each to learn more about their specific endpoints and responsibilities:
 
