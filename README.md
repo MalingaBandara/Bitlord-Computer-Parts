@@ -85,5 +85,5 @@ Start the services in the following order using `mvn spring-boot:run` in their r
 Finally, start the frontend application using `npm run dev` in the `frontend` directory.
 
 ## Documentation
-- **Business Requirements (BRD)**: Found in `../BUSINESS_REQUIREMENTS.md` (or copy to this repo). Details business goals, scope, and rules.
-- **Technical Requirements (TRD)**: Found in `../TECHNICAL_REQUIREMENTS.md` (or copy to this repo). Details event schemas, database schemas, and architectural diagrams.
+- **Business Requirements (BRD)**: Details business goals, scope, and rules.
+- **Technical Requirements (TRD)**: Details event schemas, database schemas, and architectural diagrams.
