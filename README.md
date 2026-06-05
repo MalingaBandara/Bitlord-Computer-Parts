@@ -27,23 +27,29 @@ The system is built on an **Event-Driven Microservices Architecture** using **Ja
 
 ---
 
+### 🔷 Observability And Infrastructure
+![Observability And Infrastructure](./Diagrams/Observability_And_Infrastructure_Diagram.png)
+
+---
+
 ### 🔷 Kafka Listener Architecture
 ![Kafka Listener Architecture](./Diagrams/kafka_listener_architecture.svg)
 
 ---
 
-
-
 ## Repositories (Services)
+
 This project is broken down into modular repositories (services). Click on each to learn more about their specific endpoints and responsibilities:
 
-- [API Gateway](./api-gateway/README.md) - Single entry point and routing.
-- [Auth Service](./auth-service/README.md) - JWT authentication.
-- [Eureka Server](./eureka-server/README.md) - Service registry and discovery.
-- [Order Service](./order-service/README.md) - Manages order placement and lifecycle.
-- [Inventory Service](./inventory-service/README.md) - Manages stock levels and reservations.
-- [Notification Service](./notification-service/README.md) - Email and system alerts via Kafka.
-- [Frontend Application](./frontend/README.md) - React UI for customers and admins.
+| Service | Repository | Description |
+|---|---|---|
+| 🌐 API Gateway | [API-Gateway-BitLord-Computers](https://github.com/MalingaBandara/API-Gateway-BitLord-Computers) | Single entry point, routing & JWT validation |
+| 🔐 Auth Service | [Auth-Service-BitLord-Computers](https://github.com/MalingaBandara/Auth-Service-BitLord-Computers) | JWT authentication & user registration |
+| 🔍 Eureka Server | [Eureka-Service-Registry-BitLord-Computers](https://github.com/MalingaBandara/Eureka-Service-Registry-BitLord-Computers) | Service registry and discovery |
+| 📦 Order Service | [Order-Service-BitLord-Computers](https://github.com/MalingaBandara/Order-Service-BitLord-Computers) | Manages order placement and lifecycle |
+| 🏭 Inventory Service | [Inventory-Service-BitLord-Computers](https://github.com/MalingaBandara/Inventory-Service-BitLord-Computers) | Manages stock levels and reservations |
+| 🔔 Notification Service | [Notification-Service-BitLord-Computers](https://github.com/MalingaBandara/Notification-Service-BitLord-Computers) | Email and system alerts via Kafka |
+| 🖥️ Frontend Application | [Frontend-Application-BitLord-Computers](https://github.com/MalingaBandara/Frontend-Application-BitLord-Computers) | React UI for customers and admins |
 
 ## Core Use Cases
 1. **Order Placement & Inventory Reservation**: A customer places an order via the API Gateway. The Order Service creates a `PENDING` order and publishes an `order-placed` event. The Inventory Service consumes this, reserves stock, and publishes an `inventory-reservation-result`. The Order Service then updates the order to `CONFIRMED` or `FAILED`.
