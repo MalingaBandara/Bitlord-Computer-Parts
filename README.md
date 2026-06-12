@@ -1,4 +1,4 @@
-# Bitlord's Computer Parts - Event-Driven Microservices Architecture
+# Bitlord's Computer Parts - Event-Driven Order & Inventory System (Microservices Architecture)
 
 ## About This Project
 Bitlord's Computer Parts is a robust, scalable backend system designed for a computer hardware retailer. It manages product orders, tracks real-time inventory levels, and notifies stakeholders of critical events. 
